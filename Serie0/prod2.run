@@ -1,0 +1,8 @@
+reset;
+model prod2.mod;
+data prod2.dat;
+
+solve;
+display XB;
+display XC;
+ 

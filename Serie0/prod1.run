@@ -1,0 +1,6 @@
+reset;
+model prod1.mod;
+data prod1.dat;
+
+solve;
+display X; 

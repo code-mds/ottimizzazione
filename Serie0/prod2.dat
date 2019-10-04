@@ -1,0 +1,12 @@
+param P1 := 25;
+param P2 := 30;
+
+param T1 := 0.005;
+param T2 := 0.0074;
+param T_Constraint := 40;
+
+param B_LowerBound := 0;
+param B_UpperBound := 6000;
+
+param C_LowerBound := 0;
+param C_UpperBound := 4000;
