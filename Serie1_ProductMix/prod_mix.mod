@@ -17,14 +17,6 @@ param NumHoursPerShift;
 param NumShiftPerDay;
 param NumWorkingDayPerWeek;
 
-
-set ProfitIndex;
-
-
-param Lower{ProfitIndex};
-param Upper{ProfitIndex};
-param TimeLimit;
-
 # Variabili (in questo caso vettore)
 var X{ProdIdx} integer, >= 0;
 
