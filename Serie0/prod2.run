@@ -1,8 +1,6 @@
 reset;
-model prod2.mod;
-data prod2.dat;
+model prod1.mod;
+data prod1.dat;
 
 solve;
-display XB;
-display XC;
- 
+display X; 

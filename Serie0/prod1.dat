@@ -1,20 +1,12 @@
-set ProfitIndex := v1 v2;
+param P1 := 25;
+param P2 := 30;
 
-param P := 
-v1 25
-v2 30;
-
-param T := 
-v1 0.005
-v2 0.007143;
-
-param L := 
-v1 0
-v2 0;
-
-param U := 
-v1 6000
-v2 4000;
-
+param T1 := 0.005;
+param T2 := 0.0074;
 param T_Constraint := 40;
 
+param B_LowerBound := 0;
+param B_UpperBound := 6000;
+
+param C_LowerBound := 0;
+param C_UpperBound := 4000;

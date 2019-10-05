@@ -1,24 +1,28 @@
-#esempio con modello e dati insieme nello stesso file
-set ProfitIndex;
+########################################################
+# Esempio con modello e dati separati 
+# Variabili, Parametri e Vincoli definiti singolarmenti
+########################################################
+var XB;
+var XC;
 
-param P{ProfitIndex};
-param T{ProfitIndex};
-param L{ProfitIndex};
-param U{ProfitIndex};
+param P1;
+param P2;
+
+param T1;
+param T2;
 param T_Constraint;
 
-var X{ProfitIndex};
+param B_LowerBound;
+param B_UpperBound;
 
+param C_LowerBound;
+param C_UpperBound;
 
 
 # obiettivo
-maximize Profit: sum{i in ProfitIndex} P[i] * X[i];
+maximize Profit: P1 * XB + P2 * XC;
 
 # vincoli
-s.t. Time: sum{i in ProfitIndex} T[i] * X[i] <= T_Constraint;
-
-s.t. Constr{i in ProfitIndex}: L[i] <= X[i] <= U[i];
-
-
-#subject to B_Limit: B_LowerBound <= XB <= B_UpperBound;
-#subject to C_Limit: C_LowerBound <= XC <= C_UpperBound;
+subject to Time: T1 * XB + T2 * XC <= T_Constraint;
+subject to B_Limit: B_LowerBound <= XB <= B_UpperBound;
+subject to C_Limit: C_LowerBound <= XC <= C_UpperBound;
