@@ -1,0 +1,40 @@
+# Indici
+set ProdIdx := P1, P2, P3, P4, P5;
+set MachineTypeIdx := Grinding, Drilling;
+
+# Parametri come Vettori
+param ProdPrice := 
+	P1 550
+	P2 600
+	P3 350
+	P4 400
+	P5 200;
+
+param NumMachines := 
+	Grinding 3
+	Drilling 2;
+	
+# Parametri come Matrice
+param ProdTime: Grinding Drilling := 
+	P1 12 10
+	P2 20 8
+	P3 0 16
+	P4 25 0
+	P5 15 0;
+		
+param NumEmployees := 8;
+param NumHoursPerShift := 8;
+param NumHoursPerAssembly := 20;
+param NumShiftPerDay := 2;
+param NumWorkingDayPerWeek := 6;	
+
+
+param Lower := 
+	1 0
+	2 0;
+
+param Upper := 
+	1 6000
+	2 4000;
+
+param TimeLimit := 40;

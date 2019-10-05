@@ -1,0 +1,11 @@
+reset;
+
+model prod_mix.mod;
+data prod_mix.dat;
+
+# add "option solver cplex" to get integral solution 
+# otherwise you get a: "ignoring integrality of 5 variables"
+option solver cplex;
+solve;
+
+display X; 
