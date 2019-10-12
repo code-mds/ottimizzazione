@@ -24,5 +24,7 @@ maximize Profit: P1 * XB + P2 * XC;
 
 # vincoli
 subject to Time: T1 * XB + T2 * XC <= T_Constraint;
+
 subject to B_Limit: B_LowerBound <= XB <= B_UpperBound;
 subject to C_Limit: C_LowerBound <= XC <= C_UpperBound;
+

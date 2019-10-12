@@ -1,0 +1,16 @@
+set Left := a, b, c;
+set Right := 1, 2, 3;
+
+# param PRI{Left,Right};	
+# piorita [0..n]
+param PRI: 1 2 3 := 
+         a 1 0 2
+         b 0 2 0
+         c 1 1 2;
+
+# param ACC{Left,Right};	
+# accettabilita [0..1], 0 non accettabile
+param ACC: 1 2 3 := 
+         a 1 0 1
+         b 0 1 0
+         c 1 1 1;

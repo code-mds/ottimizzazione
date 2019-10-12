@@ -16,12 +16,12 @@ param NumMachines :=
 	
 # Parametri come Matrice
 param ProdTime: Grinding Drilling := 
-	P1 12 10
-	P2 20 8
-	P3 0 16
-	P4 25 0
-	P5 15 0;
-		
+			P1  12       10
+			P2  20       8
+			P3  0        16
+			P4  25       0
+			P5  15       0;
+				
 param NumEmployees := 8;
 param NumHoursPerShift := 8;
 param NumHoursPerAssembly := 20;
