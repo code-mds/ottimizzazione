@@ -1,2 +1,2 @@
-# ottimizzazione
-Ricerca Operativa
+# SUPSI - Ricerca Operativa
+Esercizi di Ottimizzazione con AMPL
